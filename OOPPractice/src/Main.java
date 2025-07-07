@@ -1,3 +1,4 @@
+import model.AbstractPerson;
 import model.Person;
 import model.Student;
 import service.PersonService;
@@ -6,25 +7,11 @@ import service.PersonService;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Person p1 = new Person("Alice", 36);
-        p1.introduce();
+        AbstractPerson s = new Student("Alice", "Waseda University");
+        AbstractPerson t =  new Student("Bob", "Waseda University");
 
-        Student s1 = new Student("Bob", 20, "Tokyo University");
-        s1.introduce();
-
-        //多型: 父類型變數 -> 指向子類型實體
-        Person p2 = new Student("Charlie", 22, "Keio University");
-        p2.introduce();
-//        //建立一個Person物件
-//        Person p = new Person("Alice", 25);
-//        p.introduce();// Hi, I'm Alice and I'm 25 years old.
-//
-//        Student s = new Student("Bob", 20, "Tokyo University");
-//        s.introduce(); // Hi, I'm Bob, 20 years old, and I study at Tokyo University.
-//
-//        //呼叫服務類別
-//        PersonService service = new PersonService();
-//        service.birthday(p);//Alice is now 26 years old
+        s.introduce();
+        t.introduce();
     }
 }
 
