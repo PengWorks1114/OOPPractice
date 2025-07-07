@@ -1,4 +1,5 @@
 import model.Person;
+import model.Student;
 import service.PersonService;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -8,6 +9,9 @@ public class Main {
         //建立一個Person物件
         Person p = new Person("Alice", 25);
         p.introduce();// Hi, I'm Alice and I'm 25 years old.
+
+        Student s = new Student("Bob", 20, "Tokyo University");
+        s.introduce(); // Hi, I'm Bob, 20 years old, and I study at Tokyo University.
 
         //呼叫服務類別
         PersonService service = new PersonService();
