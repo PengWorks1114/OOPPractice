@@ -34,8 +34,10 @@ public class Person {
         }
     }
 
+    //可被子類覆寫的行為
     public void introduce() {
-        System.out.println("Hi, I'm" + name + "and I'm" + age + "years old.");
+//        System.out.println("Hi, I'm" + name + "and I'm" + age + "years old.");
+        System.out.println("I'm a person: " + name);
     }
     }
 
