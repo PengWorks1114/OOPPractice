@@ -37,3 +37,17 @@ public class Person {
         System.out.println("Hi, I'm" + name + "and I'm" + age + "years old.");
     }
     }
+
+//✅ 功能說明：
+//這是我們的 資料類別（Model），代表一個人，封裝了：
+//
+//屬性（name、age）
+//
+//方法（get/set、introduce()）
+//
+//✅ 重點概念（封裝 Encapsulation）：
+//private 屬性保護資料，不讓外部直接修改
+//
+//public 的 Getter/Setter 提供安全的資料讀寫方式
+//
+//introduce() 是一種行為（方法），會印出自我介紹

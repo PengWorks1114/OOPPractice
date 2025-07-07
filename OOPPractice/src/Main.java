@@ -14,3 +14,18 @@ public class Main {
         service.birthday(p);//Alice is now 26 years old
     }
 }
+
+//
+//        Main.java ──→ 建立 Person 對象
+//         └──→ 呼叫 PersonService 對象
+//                 └──→ 操作 Person 對象的資料
+//✅ 功能說明：
+//        這是主程式，也是整個專案的進入點（entry point），負責：
+//
+//        建立 Person 物件
+//
+//        呼叫 introduce() → 自我介紹
+//
+//        建立 PersonService 物件
+//
+//        呼叫 birthday(p) → 幫 p（Person）加一歲
